@@ -19,7 +19,7 @@ function CreateRespo() {
       setwait("Wait for a moment");
       try {
         await axios.post(
-          "https://vivek-oms.herokuapp.com/api/order/createOrder",
+          "https://oms-server.vercel.app/api/order/createOrder",
           values,
           {
             headers: {
