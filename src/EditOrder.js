@@ -22,7 +22,7 @@ let formik = useFormik({
     try {
       
         await axios.put(
-          `https://oms-server.vercel.app/api/order/editOrder/${currentOrder}`,
+          `https://oms-server.onrender.com/api/order/editOrder/${currentOrder}`,
           values,
           {
             headers: {
