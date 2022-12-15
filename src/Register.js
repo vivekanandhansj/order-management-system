@@ -35,7 +35,7 @@ function Register() {
     },
     onSubmit: async (values) => {
       try {
-        await axios.post('https://oms-server.vercel.app/api/auth/register', values);
+        await axios.post('https://oms-server.onrender.com/api/auth/register', values);
         navigate('/');
       } catch (error) {
         console.log(error);
