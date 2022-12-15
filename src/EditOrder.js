@@ -22,7 +22,7 @@ let formik = useFormik({
     try {
       
         await axios.put(
-          `https://vivek-oms.herokuapp.com/api/order/editOrder/${currentOrder}`,
+          `https://oms-server.vercel.app/api/order/editOrder/${currentOrder}`,
           values,
           {
             headers: {
@@ -41,7 +41,7 @@ let formik = useFormik({
 
   useEffect( async () => {
     try {
-        let studetData = await axios.get(`https://vivek-oms.herokuapp.com/api/order/viewOrder/${params.id}`, {
+        let studetData = await axios.get(`https://oms-server.vercel.app/api/order/viewOrder/${params.id}`, {
             headers: {
               Authorization: window.localStorage.getItem("myapptoken"),
             },
