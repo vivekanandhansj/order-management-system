@@ -41,7 +41,7 @@ let formik = useFormik({
 
   useEffect( async () => {
     try {
-        let studetData = await axios.get(`https://oms-server.vercel.app/api/order/viewOrder/${params.id}`, {
+        let studetData = await axios.get(`https://oms-server.onrender.com/api/order/viewOrder/${params.id}`, {
             headers: {
               Authorization: window.localStorage.getItem("myapptoken"),
             },
