@@ -10,7 +10,7 @@ function Home() {
   
   async function fetchAll() {
     try {
-      let studentsData = await axios.get("https://vivek-oms.herokuapp.com/api/order/orderList", {
+      let studentsData = await axios.get("https://oms-server.vercel.app/api/order/orderList", {
         headers: {
           Authorization: window.localStorage.getItem("myapptoken"),
         },
@@ -33,7 +33,7 @@ function Home() {
         "Are you sure, do you want to delete this order?"
       );
       if (ask) {
-        await axios.delete(`https://vivek-oms.herokuapp.com/api/order/deleteOrder/${id}`, {
+        await axios.delete(`https://oms-server.vercel.app/api/order/deleteOrder/${id}`, {
           headers: {
             Authorization: window.localStorage.getItem("myapptoken"),
           },
