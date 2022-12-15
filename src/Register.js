@@ -35,7 +35,7 @@ function Register() {
     },
     onSubmit: async (values) => {
       try {
-        await axios.post('https://vivek-oms.herokuapp.com/api/auth/register', values);
+        await axios.post('https://oms-server.vercel.app/api/auth/register', values);
         navigate('/');
       } catch (error) {
         console.log(error);
