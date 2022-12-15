@@ -23,7 +23,7 @@ function Viewrepo() {
     
     useEffect( async () => {
         try {
-            let repoData = await axios.get(`https://vivek-oms.herokuapp.com/api/order/viewOrder/${params.id}`, {
+            let repoData = await axios.get(`https://oms-server.vercel.app/api/order/viewOrder/${params.id}`, {
                 headers: {
                   Authorization: window.localStorage.getItem("myapptoken"),
                 },
