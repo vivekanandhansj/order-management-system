@@ -19,7 +19,7 @@ function CreateRespo() {
       setwait("Wait for a moment");
       try {
         await axios.post(
-          "https://oms-server.vercel.app/api/order/createOrder",
+          "https://oms-server.onrender.com/api/order/createOrder",
           values,
           {
             headers: {
