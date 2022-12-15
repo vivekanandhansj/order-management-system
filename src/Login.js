@@ -17,7 +17,7 @@ function Login() {
     },
     onSubmit: async (values) => {
       try {
-        let loginData = await axios.post("https://oms-server.vercel.app/api/auth/login", values);
+        let loginData = await axios.post("https://oms-server.onrender.com/api/auth/login", values);
         window.localStorage.setItem("myapptoken", loginData.data.token);
         navigate("/home");
       } catch (error) {
